@@ -17,6 +17,10 @@ public class Company {
 		return dispatcher;
 	}
 	
+	public ArrayList<Aircraft> getTransportList(){
+		return transportList;
+	}
+	
 	public void addTransport(Aircraft aircraft) {
 		if(aircraft != null) {
 		transportList.add(aircraft);
