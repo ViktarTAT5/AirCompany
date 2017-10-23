@@ -3,8 +3,9 @@ package by.htp.airline.logic;
 import java.util.Collections;
 import java.util.List;
 
-import by.htp.airline.domen.Aircraft;
+
 import by.htp.airline.domen.Company;
+import by.htp.airline.domen.aircraft.Aircraft;
 import by.htp.airline.util.Print;
 
 public class Dispatcher {

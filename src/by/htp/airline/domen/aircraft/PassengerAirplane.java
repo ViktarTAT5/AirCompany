@@ -1,4 +1,4 @@
-package by.htp.airline.domen;
+package by.htp.airline.domen.aircraft;
 
 public class PassengerAirplane extends Aircraft {
 	public PassengerAirplane(String model, int id, int capacityPasangers, float capacityCargo, float carryingCapasity,

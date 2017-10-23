@@ -1,10 +1,10 @@
 package by.htp.airline.launch;
 
-import by.htp.airline.domen.Aircraft;
-import by.htp.airline.domen.CargoAirplane;
+
 import by.htp.airline.domen.Company;
-import by.htp.airline.domen.PassengerAirplane;
-import by.htp.airline.domen.Tipe;
+import by.htp.airline.domen.aircraft.Aircraft;
+import by.htp.airline.domen.aircraft.CargoAirplane;
+import by.htp.airline.domen.aircraft.PassengerAirplane;
 import by.htp.airline.logic.Dispatcher;
 
 public class Main {

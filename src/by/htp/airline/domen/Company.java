@@ -2,6 +2,7 @@ package by.htp.airline.domen;
 
 import java.util.ArrayList;
 
+import by.htp.airline.domen.aircraft.Aircraft;
 import by.htp.airline.logic.Dispatcher;
 
 public class Company {

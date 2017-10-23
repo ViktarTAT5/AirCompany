@@ -1,4 +1,4 @@
-package by.htp.airline.domen;
+package by.htp.airline.domen.aircraft;
 
 public class Aircraft {
 	private int id;
