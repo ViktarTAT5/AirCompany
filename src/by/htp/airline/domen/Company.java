@@ -1,24 +1,25 @@
 package by.htp.airline.domen;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import by.htp.airline.domen.aircraft.Aircraft;
 import by.htp.airline.logic.Dispatcher;
 
 public class Company {
-	private ArrayList<Aircraft> transportList = new ArrayList();
-	
+	private List<Aircraft> transportList;
 	private Dispatcher dispatcher;
 	
 	public Company() {
 		dispatcher = new Dispatcher(this);
+		transportList = new ArrayList<>();
 	}
 	
 	public Dispatcher getDispatcher() {
 		return dispatcher;
 	}
 	
-	public ArrayList<Aircraft> getTransportList(){
+	public List<Aircraft> getTransportList(){
 		return transportList;
 	}
 	
