@@ -24,6 +24,10 @@ public class Company {
 		return dispatcher;
 	}
 	
+	public CargoMaster getCargoMaster() {
+		return cargoMaster;
+	}
+	
 	public List<Aircraft> getTransportList(){
 		return transportList;
 	}

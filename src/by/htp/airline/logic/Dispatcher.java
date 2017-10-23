@@ -16,6 +16,11 @@ public class Dispatcher {
 		this.company = company;
 	}
 	
+	public void fitAircraftInFlight(int number, Aircraft aircraft) {
+		Flight flight = searchFlight(number);
+		flight.setAircraft(aircraft);
+	}
+	
 	public void sortedByRangeOfFlight() {
 		List<Aircraft> transportList = company.getTransportList();
 		Collections.sort(transportList, new SortedByRangeOfFlight());
@@ -47,6 +52,11 @@ public class Dispatcher {
 		for(int i = 0; i < company.getAmountTransport(); i++) {
 			Print.print(company.getTransport(i).toString());
 		}
+	}
+	
+	public void createNewFlight(int number) {
+		Flight flight = new Flight(number);
+		company.addFlight(flight);
 	}
 	
 	public Flight searchFlight(int number) {
