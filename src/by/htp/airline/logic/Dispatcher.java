@@ -5,6 +5,7 @@ import java.util.List;
 
 
 import by.htp.airline.domen.Company;
+import by.htp.airline.domen.Flight;
 import by.htp.airline.domen.aircraft.Aircraft;
 import by.htp.airline.util.Print;
 
@@ -46,6 +47,16 @@ public class Dispatcher {
 		for(int i = 0; i < company.getAmountTransport(); i++) {
 			Print.print(company.getTransport(i).toString());
 		}
+	}
+	
+	public Flight searchFlight(int number) {
+		for(int i = 0; i < company.getAmountFlight(); i++) {
+			int tempNumber = company.getFlight(i).getNumber();
+			if(tempNumber == number){
+				return company.getFlight(i);
+			}
+		}
+		return null;
 	}
 	
 	public void searchByParameters(float minFuelConsumption, float maxFuelConsumption) {
