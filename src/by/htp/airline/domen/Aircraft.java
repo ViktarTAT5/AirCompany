@@ -2,7 +2,6 @@ package by.htp.airline.domen;
 
 public class Aircraft {
 	private int id;
-	private Tipe tipe;
 	private String model;
 	private int capacityPasangers;
 	private float capacityCargo;
@@ -10,32 +9,26 @@ public class Aircraft {
 	private float rangeOfFlight;
 	private float fuelConsumption;
 	
-	public Aircraft(int id, Tipe tipe, String model, int capacityPasangers, float capacityCargo, float carryingCapasity,
+	public Aircraft(String model, int id, int capacityPasangers, float capacityCargo, float carryingCapasity,
 			float rangeOfFlight, float fuelConsumption) {
-		super();
-		this.id = id;
-		this.tipe = tipe;
 		this.model = model;
+		this.id = id;
 		this.capacityPasangers = capacityPasangers;
 		this.capacityCargo = capacityCargo;
 		this.carryingCapasity = carryingCapasity;
 		this.rangeOfFlight = rangeOfFlight;
 		this.fuelConsumption = fuelConsumption;
 	}
+	
+	public String getModel() {
+		return model;
+	}
 
 	public int getId() {
 		return id;
 	}
 
-	public Tipe getTipe() {
-		return tipe;
-	}
-
-	public String getModel() {
-		return model;
-	}
-
-	public int getCapacityPasangers() {
+		public int getCapacityPasangers() {
 		return capacityPasangers;
 	}
 
@@ -57,7 +50,7 @@ public class Aircraft {
 
 	@Override
 	public String toString() {
-		return "Aircraft [model=" + model + ", tipe=" + tipe + ", id=" + id + ", capacityPasangers=" + capacityPasangers
+		return "[model=" + model + ", id=" + id + ", capacityPasangers=" + capacityPasangers
 				+ ", capacityCargo=" + capacityCargo + ", carryingCapasity=" + carryingCapasity + ", rangeOfFlight="
 				+ rangeOfFlight + ", fuelConsumption=" + fuelConsumption + "]";
 	}
