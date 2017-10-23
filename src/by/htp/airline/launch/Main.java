@@ -24,7 +24,7 @@ public class Main {
 		dispatcher.showListTransport();
 		dispatcher.totalCapacityCargoAndCarrying();
 		dispatcher.sortedByRangeOfFlight();
-		
+		dispatcher.searchByParameters(4, 5);
 		
 	}
 }

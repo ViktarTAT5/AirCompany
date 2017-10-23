@@ -47,5 +47,12 @@ public class Dispatcher {
 		}
 	}
 	
-	
+	public void searchByParameters(float minFuelConsumption, float maxFuelConsumption) {
+		for(int i = 0; i < company.getAmountTransport(); i++) {
+			float temp = company.getTransport(i).getFuelConsumption();
+			if(temp >= minFuelConsumption && temp <= maxFuelConsumption) {
+				Print.print(company.getTransport(i).toString());
+			}
+		}
+	}
 }
