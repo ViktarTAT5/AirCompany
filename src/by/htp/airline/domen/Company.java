@@ -3,7 +3,7 @@ package by.htp.airline.domen;
 import java.util.ArrayList;
 import java.util.List;
 
-import by.htp.airline.domen.aircraft.Aircraft;
+import by.htp.airline.domen.transport.Aircraft;
 import by.htp.airline.logic.CargoMaster;
 import by.htp.airline.logic.Dispatcher;
 

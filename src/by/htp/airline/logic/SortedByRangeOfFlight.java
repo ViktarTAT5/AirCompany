@@ -1,7 +1,8 @@
 package by.htp.airline.logic;
 
 import java.util.Comparator;
-import by.htp.airline.domen.aircraft.Aircraft;
+
+import by.htp.airline.domen.transport.Aircraft;
 
 public class SortedByRangeOfFlight implements Comparator<Aircraft> {
 

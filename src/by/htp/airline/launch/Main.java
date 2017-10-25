@@ -3,10 +3,10 @@ package by.htp.airline.launch;
 
 import by.htp.airline.domen.Company;
 import by.htp.airline.domen.Flight;
-import by.htp.airline.domen.aircraft.Aircraft;
-import by.htp.airline.domen.aircraft.CargoAirplane;
-import by.htp.airline.domen.aircraft.PassengerAirplane;
 import by.htp.airline.domen.cargo.Cargo;
+import by.htp.airline.domen.transport.Aircraft;
+import by.htp.airline.domen.transport.CargoAirplane;
+import by.htp.airline.domen.transport.PassengerAirplane;
 import by.htp.airline.logic.CargoMaster;
 import by.htp.airline.logic.Dispatcher;
 
