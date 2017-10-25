@@ -2,7 +2,7 @@ package by.htp.airline.domen.transport.train;
 
 import by.htp.airline.domen.transport.Transport;
 
-public class Train extends Transport {
+public abstract class Train extends Transport {
 	private int widthTrack;
 
 	public Train() {
