@@ -1,13 +1,13 @@
 package by.htp.airline.domen.transport.ship;
 
-public abstract class Bulkcarrier extends Ship {
+public class Bulkcarrier extends Ship {
 	private float cargoCapacity;
 
 	public Bulkcarrier() {
-		
+
 	}
 
-	public Bulkcarrier(String title, int displacement,float cargoCapacity) {
+	public Bulkcarrier(String title, int displacement, float cargoCapacity) {
 		super(title, displacement);
 		this.cargoCapacity = cargoCapacity;
 	}
@@ -44,10 +44,7 @@ public abstract class Bulkcarrier extends Ship {
 
 	@Override
 	public String toString() {
-		return " cargoCapacity= " + cargoCapacity + ",";
+		return "Bulkcarrier [" + super.toString() + " cargoCapacity=" + cargoCapacity + "]";
 	}
 
-	
-	
-	
 }
