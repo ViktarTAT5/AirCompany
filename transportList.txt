@@ -1,13 +1,13 @@
-CargoAirplane/ Airbus/ A330-200F 1111 300 100 1500 15
-CargoAirplane/ Airbus/ A330-200F
-CargoAirplane/ Airbus/ A330-200F
-CargoAirplane/ Boeing/ 747-8F
-CargoAirplane/ Boeing/ 747-400 
-CargoAirplane/ Boeing/ BC-17
-CargoAirplane/ Boeing/ BC-17
-CargoAirplane/ Fairchild/ C-82
-CargoAirplane/ Lockheed/ L-100
-CargoAirplane/ Lockheed/ L-100
-CargoAirplane/ Lockheed/ C-130 
-CargoAirplane/ Lockheed/ C-5B
-CargoAirplane/ Lockheed/ C-5B
+CargoAirplane Airbus A330-200F 1111 300 100 1500 15 2.5 5 MikComp
+CargoAirplane Airbus A330-200F 1112 300 100 1500 15 2.5 5 MikComp
+CargoAirplane Airbus A330-200F 1113 300 100 1500 15 2.5 5 MikComp
+CargoAirplane Boeing 747-8F 1001 250 75 1300 12 2 2 MikCompII
+CargoAirplane Boeing 747-400 1011 260 80 1300 13 2 2 InkMast
+CargoAirplane Boeing BC-17 1021 200 60 1500 12 2 2 null
+CargoAirplane Boeing BC-17 1022 200 60 1500 12 2 2 null
+CargoAirplane Fairchild C-82 0001 50 20 700 8 2 2 null
+CargoAirplane Lockheed L-100 1201 220 70 1300 14 2 2 MikCompII
+CargoAirplane Lockheed L-100 1202 220 70 1300 14 2 2 MikCompII
+CargoAirplane Lockheed C-130 1211 150 50 1500 9 2 2 MikCompII
+CargoAirplane Lockheed C-5B 1221 220 70 1000 10 2 2 MikCompII
+CargoAirplane Lockheed C-5B 1222 220 70 1000 10 2 2 MikCompII

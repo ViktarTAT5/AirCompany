@@ -4,7 +4,7 @@ import by.htp.airline.domen.transport.aircraft.Aircraft;
 import by.htp.airline.domen.transport.aircraft.CargoAirplane;
 import by.htp.airline.domen.transport.aircraft.PassengerAirplane;
 
-public class FactoryAircraft {
+public abstract class FactoryAircraft {
 	public static Aircraft createAircraft(String aircraftParameters) {
 		Aircraft aircraft = null;
 		String[] mas = aircraftParameters.split(" ");

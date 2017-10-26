@@ -2,8 +2,6 @@ package by.htp.airline.logic;
 
 import java.util.Collections;
 import java.util.List;
-
-
 import by.htp.airline.domen.Company;
 import by.htp.airline.domen.Flight;
 import by.htp.airline.domen.transport.aircraft.Aircraft;
@@ -70,11 +68,16 @@ public class Dispatcher {
 	}
 	
 	public void searchByParameters(float minFuelConsumption, float maxFuelConsumption) {
+		boolean beResult = false;
 		for(int i = 0; i < company.getAmountTransport(); i++) {
 			float temp = company.getTransport(i).getFuelConsumption();
 			if(temp >= minFuelConsumption && temp <= maxFuelConsumption) {
 				Print.print(company.getTransport(i).toString());
+				beResult = true;
 			}
+		}
+		if(!beResult){
+			Print.print("No result");
 		}
 	}
 }

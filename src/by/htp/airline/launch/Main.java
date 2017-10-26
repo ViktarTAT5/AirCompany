@@ -9,6 +9,7 @@ import by.htp.airline.domen.transport.aircraft.CargoAirplane;
 import by.htp.airline.domen.transport.aircraft.PassengerAirplane;
 import by.htp.airline.logic.CargoMaster;
 import by.htp.airline.logic.Dispatcher;
+import by.htp.airline.logic.StartProgram;
 
 public class Main {
 	public static void main(String[] args) {
@@ -20,12 +21,14 @@ public class Main {
 //		Aircraft plan5 = new PassengerAirplane("HIlco", 15, 60, 15, 30, 800, 3.5f);
 //		Aircraft plan6 = new CargoAirplane("Bison", 16, 0, 300, 400, 800, 4f);
 		
-		company.addTransport(plan1);
-		company.addTransport(plan2);
-		company.addTransport(plan3);
-		company.addTransport(plan4);
-		company.addTransport(plan5);
-		company.addTransport(plan6);
+//		company.addTransport(plan1);
+//		company.addTransport(plan2);
+//		company.addTransport(plan3);
+//		company.addTransport(plan4);
+//		company.addTransport(plan5);
+//		company.addTransport(plan6);
+		StartProgram start = new StartProgram();
+		start.start(company);
 		
 		Dispatcher dispatcher = company.getDispatcher();
 		dispatcher.showListTransport();
@@ -33,18 +36,18 @@ public class Main {
 		dispatcher.sortedByRangeOfFlight();
 		dispatcher.searchByParameters(4, 5);
 		
-		dispatcher.createNewFlight(11);
-		Flight flight = dispatcher.searchFlight(11);
-		dispatcher.fitAircraftInFlight(11, plan6);
+		//dispatcher.createNewFlight(11);
+		//Flight flight = dispatcher.searchFlight(11);
+		//dispatcher.fitAircraftInFlight(11, plan6);
 		
-		CargoMaster cargoMaster = company.getCargoMaster();
-		cargoMaster.createNewCargoList(123);
-		cargoMaster.addCargo(new Cargo("car", 456, 1.5f, 5));
-		cargoMaster.addCargo(new Cargo("spares", 325, 0.5f, 1));
-		cargoMaster.showCargoList();
-		
-		cargoMaster.transferCargoList(11);
-		cargoMaster.showCargoList();
+//		CargoMaster cargoMaster = company.getCargoMaster();
+//		cargoMaster.createNewCargoList(123);
+//		cargoMaster.addCargo(new Cargo("car", 456, 1.5f, 5));
+//		cargoMaster.addCargo(new Cargo("spares", 325, 0.5f, 1));
+//		cargoMaster.showCargoList();
+//		
+//		cargoMaster.transferCargoList(11);
+//		cargoMaster.showCargoList();
 		
 		
 	}

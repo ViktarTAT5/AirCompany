@@ -2,7 +2,6 @@ package by.htp.airline.domen;
 
 import java.util.ArrayList;
 import java.util.List;
-
 import by.htp.airline.domen.transport.aircraft.Aircraft;
 import by.htp.airline.logic.CargoMaster;
 import by.htp.airline.logic.Dispatcher;
@@ -28,6 +27,10 @@ public class Company {
 		return cargoMaster;
 	}
 	
+	public void setTransportList(List<Aircraft> transportList) {
+		this.transportList = transportList;
+	}
+
 	public List<Aircraft> getTransportList(){
 		return transportList;
 	}
@@ -42,7 +45,7 @@ public class Company {
 		return transportList.get(index);
 	}
 	
-	public void SetTransport(int index, Aircraft aircraft) {
+	public void setTransport(int index, Aircraft aircraft) {
 		if(aircraft != null) {
 		transportList.set(index, aircraft);
 		}

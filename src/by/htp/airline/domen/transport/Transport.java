@@ -75,7 +75,7 @@ public abstract class Transport {
 
 	@Override
 	public String toString() {
-		return " title= " + title + ", model= " + model + ", id= " + id + ",";
+		return "title= " + title + ", model= " + model + ", id= " + id + ",";
 	}
 
 }
