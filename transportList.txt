@@ -1,0 +1,13 @@
+CargoAirplane/ Airbus/ A330-200F
+CargoAirplane/ Airbus/ A330-200F
+CargoAirplane/ Airbus/ A330-200F
+CargoAirplane/ Boeing/ 747-8F
+CargoAirplane/ Boeing/ 747-400 
+CargoAirplane/ Boeing/ BC-17
+CargoAirplane/ Boeing/ BC-17
+CargoAirplane/ Fairchild/ C-82
+CargoAirplane/ Lockheed/ L-100
+CargoAirplane/ Lockheed/ L-100
+CargoAirplane/ Lockheed/ C-130 
+CargoAirplane/ Lockheed/ C-5B
+CargoAirplane/ Lockheed/ C-5B
