@@ -1,4 +1,4 @@
-CargoAirplane/ Airbus/ A330-200F
+CargoAirplane/ Airbus/ A330-200F 1111 300 100 1500 15
 CargoAirplane/ Airbus/ A330-200F
 CargoAirplane/ Airbus/ A330-200F
 CargoAirplane/ Boeing/ 747-8F
