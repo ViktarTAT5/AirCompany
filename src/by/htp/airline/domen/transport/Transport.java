@@ -2,14 +2,17 @@ package by.htp.airline.domen.transport;
 
 public abstract class Transport {
 	private String title;
+	private String model;
+	private int id;
 
 	public Transport() {
-		
+
 	}
 
-	public Transport(String title) {
-		super();
+	public Transport(String title, String model, int id) {
 		this.title = title;
+		this.model = model;
+		this.id = id;
 	}
 
 	public String getTitle() {
@@ -20,10 +23,28 @@ public abstract class Transport {
 		this.title = title;
 	}
 
+	public String getModel() {
+		return model;
+	}
+
+	public void setModel(String model) {
+		this.model = model;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result + id;
+		result = prime * result + ((model == null) ? 0 : model.hashCode());
 		result = prime * result + ((title == null) ? 0 : title.hashCode());
 		return result;
 	}
@@ -37,6 +58,13 @@ public abstract class Transport {
 		if (getClass() != obj.getClass())
 			return false;
 		Transport other = (Transport) obj;
+		if (id != other.id)
+			return false;
+		if (model == null) {
+			if (other.model != null)
+				return false;
+		} else if (!model.equals(other.model))
+			return false;
 		if (title == null) {
 			if (other.title != null)
 				return false;
@@ -47,9 +75,7 @@ public abstract class Transport {
 
 	@Override
 	public String toString() {
-		return " title= " + title + ", ";
+		return " title= " + title + ", model= " + model + ", id= " + id + ",";
 	}
-	
-	
-	
+
 }

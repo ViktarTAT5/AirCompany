@@ -7,8 +7,8 @@ public class Lainer extends Ship {
 
 	}
 
-	public Lainer(String title, int displacement, int numberOfPassenger) {
-		super(title, displacement);
+	public Lainer(String title, String model, int id, int displacement, int numberOfPassenger) {
+		super(title, model, id, displacement);
 		this.numberOfPassenger = numberOfPassenger;
 	}
 
@@ -44,7 +44,7 @@ public class Lainer extends Ship {
 
 	@Override
 	public String toString() {
-		return "Lainer [numberOfPassenger=" + numberOfPassenger + "]";
+		return "Lainer [" + super.toString() + "numberOfPassenger=" + numberOfPassenger + "]";
 	}
 
 }

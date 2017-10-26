@@ -1,13 +1,13 @@
 package by.htp.airline.domen.transport.train;
 
-public class DieselTrain extends Train{
+public class DieselTrain extends Train {
 	private int capacityTank;
 
 	public DieselTrain() {
 	}
 
-	public DieselTrain(String title, int widthTrack, int capacityTank) {
-		super(title, widthTrack);
+	public DieselTrain(String title, String model, int id, int widthTrack, int capacityTank) {
+		super(title, model, id, widthTrack);
 		this.capacityTank = capacityTank;
 	}
 

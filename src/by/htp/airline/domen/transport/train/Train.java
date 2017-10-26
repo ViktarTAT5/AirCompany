@@ -8,12 +8,8 @@ public abstract class Train extends Transport {
 	public Train() {
 	}
 
-	public Train(String title) {
-		super(title);
-	}
-
-	public Train(String title, int widthTrack) {
-		super(title);
+	public Train(String title, String model, int id, int widthTrack) {
+		super(title, model, id);
 		this.widthTrack = widthTrack;
 	}
 

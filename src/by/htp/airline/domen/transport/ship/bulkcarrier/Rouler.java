@@ -9,8 +9,8 @@ public class Rouler extends Bulkcarrier {
 
 	}
 
-	public Rouler(String title, int displacement, float cargoCapacity, int numberOfCars) {
-		super(title, displacement, cargoCapacity);
+	public Rouler(String title, String model, int id, int displacement, float cargoCapacity, int numberOfCars) {
+		super(title, model, id, displacement, cargoCapacity);
 		this.numberOfCars = numberOfCars;
 	}
 

@@ -6,7 +6,7 @@ import java.util.List;
 
 import by.htp.airline.domen.Company;
 import by.htp.airline.domen.Flight;
-import by.htp.airline.domen.transport.Aircraft;
+import by.htp.airline.domen.transport.aircraft.Aircraft;
 import by.htp.airline.util.Print;
 
 public class Dispatcher {

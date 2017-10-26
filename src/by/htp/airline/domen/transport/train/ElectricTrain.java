@@ -6,8 +6,8 @@ public class ElectricTrain extends Train {
 	public ElectricTrain() {
 	}
 
-	public ElectricTrain(String title, int widthTrack, int capacityBattery) {
-		super(title, widthTrack);
+	public ElectricTrain(String title, String model, int id, int widthTrack, int capacityBattery) {
+		super(title, model, id, widthTrack);
 		this.capacityBattery = capacityBattery;
 	}
 

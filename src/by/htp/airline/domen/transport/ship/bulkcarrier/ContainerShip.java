@@ -9,8 +9,8 @@ public class ContainerShip extends Bulkcarrier {
 
 	}
 
-	public ContainerShip(String title, int displacement, float cargoCapacity, int numberOfContainer) {
-		super(title, displacement, cargoCapacity);
+	public ContainerShip(String title, String model, int id, int displacement, float cargoCapacity, int numberOfContainer) {
+		super(title, model, id, displacement, cargoCapacity);
 		this.numberOfContainer = numberOfContainer;
 	}
 

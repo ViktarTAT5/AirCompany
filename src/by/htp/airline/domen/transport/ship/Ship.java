@@ -9,16 +9,8 @@ public abstract class Ship extends Transport{
 
 	}
 
-	public Ship(String title, int displacement) {
-		super(title);
-		this.displacement = displacement;
-	}
-
-	public int getDisplacement() {
-		return displacement;
-	}
-
-	public void setDisplacement(int displacement) {
+	public Ship(String title, String model, int id, int displacement) {
+		super(title, model, id);
 		this.displacement = displacement;
 	}
 
@@ -46,7 +38,7 @@ public abstract class Ship extends Transport{
 
 	@Override
 	public String toString() {
-		return " displacement=" + displacement + ",";
+		return super.toString() + " displacement=" + displacement + ",";
 	}
 
 }
