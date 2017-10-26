@@ -9,13 +9,22 @@ import by.htp.airline.util.FileReader;
 
 public class StartProgram {
 	private String nameFileTransportList = "C:\\Users\\VIKTAR\\eclipse-workspace\\AirCompany\\transportList.txt";
-	
-	public void start(Company company){
+	private Company company;
+
+	public StartProgram() {
+		company = new Company();
+	}
+
+	public Company getCompany() {
+		return company;
+	}
+
+	public void start() {
 		List<String> list;
 		List<Aircraft> transportList = new ArrayList<>();
 		list = FileReader.readerList(nameFileTransportList);
-		
-		for(String i : list){
+
+		for (String i : list) {
 			transportList.add(FactoryAircraft.createAircraft(i));
 		}
 		company.setTransportList(transportList);
