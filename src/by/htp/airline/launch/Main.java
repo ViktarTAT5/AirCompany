@@ -1,14 +1,7 @@
 package by.htp.airline.launch;
 
 
-import by.htp.airline.domen.Company;
-import by.htp.airline.domen.Flight;
-import by.htp.airline.domen.cargo.Cargo;
-import by.htp.airline.domen.transport.aircraft.Aircraft;
-import by.htp.airline.domen.transport.aircraft.CargoAirplane;
-import by.htp.airline.domen.transport.aircraft.PassengerAirplane;
-import by.htp.airline.logic.CargoMaster;
-import by.htp.airline.logic.Dispatcher;
+
 import by.htp.airline.logic.Menu;
 import by.htp.airline.logic.StartProgram;
 

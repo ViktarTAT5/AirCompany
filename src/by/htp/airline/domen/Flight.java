@@ -1,7 +1,5 @@
 package by.htp.airline.domen;
 
-import java.util.List;
-
 import by.htp.airline.domen.cargo.CargoList;
 import by.htp.airline.domen.transport.aircraft.Aircraft;
 
